@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import mysql.connector
 from tkinter import *
-mydb=mysql.connector.connect(host="93.89.225.112", user="pehozgun_admina", password="Admin5050", database="pehozgun_verita")
+mydb=mysql.connector.connect(host="**.**.***.***", user="username", password="password", database="databasename")
 cursor=mydb.cursor()
 query="select * from musteri"
 cursor.execute(query)
@@ -46,7 +46,7 @@ def Add():
     telefon = e6.get()
     sehir = e7.get()
 
-    mysqldb = mysql.connector.connect(host="93.89.225.112", user="pehozgun_admina", password="Admin5050", database="pehozgun_verita")
+    mysqldb = mysql.connector.connect(host="**.**.***.***", user="username", password="password", database="databasename")
     mycursor = mysqldb.cursor()
 
     try:
@@ -84,7 +84,7 @@ def update():
     telefon = e6.get()
     sehir = e7.get()
     mysqldb = mysql.connector.connect(
-        host="93.89.225.112", user="pehozgun_admina", password="Admin5050", database="pehozgun_verita")
+       host="**.**.***.***", user="username", password="password", database="databasename")
     mycursor = mysqldb.cursor()
 
     try:
@@ -117,7 +117,7 @@ def delete():
     id = e1.get()
 
     mysqldb = mysql.connector.connect(
-        host="93.89.225.112", user="pehozgun_admina", password="Admin5050", database="pehozgun_verita")
+        host="**.**.***.***", user="username", password="password", database="databasename")
     mycursor = mysqldb.cursor()
 
     try:
@@ -148,7 +148,7 @@ def delete():
 
 def show():
     mysqldb = mysql.connector.connect(
-        host="93.89.225.112", user="pehozgun_admina", password="Admin5050", database="pehozgun_verita")
+        host="**.**.***.***", user="username", password="password", database="databasename")
     mycursor = mysqldb.cursor()
     mycursor.execute("SELECT * FROM musteri")
     records = mycursor.fetchall()

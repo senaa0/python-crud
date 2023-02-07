@@ -10,10 +10,10 @@ import tkinter as tk
 
 def connection():
     conn = pymysql.connect(
-        host='93.89.225.112',
-        user='pehozgun_admina',
-        password='Admin5050',
-        db='pehozgun_verita',
+        host='**.**.***.***',
+        user='username',
+        password='password',
+        db='databasename',
     )
     return conn
 
